@@ -10,5 +10,7 @@ for port in range(edp,ebp+1):
     try:
         sc.connect((ip.port))
         print("{}. port is open")
+        exit(0)
     except:
         pass
+print("your ports are safe :)")
