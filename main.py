@@ -38,10 +38,10 @@ image = CTkImage(light_image=Image.open("images/portscanner.png"), dark_image=Im
 logo = CTkLabel(master=frame, image=image, text="")
 logo.place(relx=0.15, rely=0.015)
 
-ip_input = CTkEntry(master=frame, corner_radius=32)
+ip_input = CTkEntry(master=frame, corner_radius=32, placeholder_text="IP")
 ip_input.place(relx=0.1, rely=0.4)
 
-port_number_input = CTkEntry(master=frame, corner_radius=32)
+port_number_input = CTkEntry(master=frame, corner_radius=32, placeholder_text="Highest Port Value")
 port_number_input.place(relx=0.1, rely=0.6)
 
 start_button = CTkButton(master=frame, corner_radius=32, command=portscanner, text="Scan", fg_color="#6a588a", hover_color="#907db3")
